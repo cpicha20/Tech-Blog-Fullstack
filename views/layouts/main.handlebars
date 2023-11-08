@@ -13,12 +13,16 @@
     <h1>
       User Registry
     </h1>
-    <!-- Only display the logout button if the user is logged in -->
+    <nav><!-- Only display the logout button if the user is logged in -->
     {{#if logged_in}}
-    <nav>
+   
       <button class="btn" id="logout">logout</button>
-    </nav>
+      {{else}}
+      <a href="/login"><button class="btn" id="login">login</button></a>
+      
+   
     {{/if}}
+    </nav>
   </header>
   <main class="container container-fluid mt-5">
     {{{ body }}}

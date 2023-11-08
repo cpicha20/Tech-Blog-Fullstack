@@ -10,16 +10,6 @@ class Comments extends Model {
 
 Comments.init(
     {
-      id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true,
-      },
-      name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
       content: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -31,7 +21,7 @@ Comments.init(
       timestamps: true,
       freezeTableName: true,
       underscored: true,
-      modelName: 'blogpost',
+      modelName: 'comments',
     }
   );
   
